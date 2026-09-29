@@ -5,7 +5,7 @@ go 1.26.4
 require (
 	github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway v0.0.0
 	github.com/spf13/viper v1.12.0
-	google.golang.org/grpc v1.84.0
+	google.golang.org/grpc v1.83.2
 	gorm.io/driver/postgres v1.5.9
 	gorm.io/gorm v1.25.10
 )
@@ -29,10 +29,10 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.3.0 // indirect
-	golang.org/x/net v0.57.0 // indirect
+	golang.org/x/net v0.58.0 // indirect
 	golang.org/x/sync v0.22.0 // indirect
 	golang.org/x/sys v0.47.0 // indirect
-	golang.org/x/text v0.40.0 // indirect
+	golang.org/x/text v0.41.0 // indirect
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/ini.v1 v1.66.4 // indirect
