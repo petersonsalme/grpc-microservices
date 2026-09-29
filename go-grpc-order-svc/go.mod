@@ -1,6 +1,6 @@
 module github.com/petersonsalme/grpc-microservices/go-grpc-order-svc
 
-go 1.25.0
+go 1.26.4
 
 require (
 	github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway v0.0.0
