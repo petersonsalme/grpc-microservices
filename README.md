@@ -66,3 +66,29 @@ The API Gateway will be accessible at `http://localhost:3000`.
 - `POST /order`: Create a new order.
 
 *Note: Endpoints requiring authentication must include the JWT token in the `Authorization` header as a Bearer token.*
+
+## Roadmap
+
+This started as a study project. The items below turn it into a study of consistency and resilience between services.
+
+### Consistency
+- [ ] Fix the order flow: today the order is saved before the stock is decreased, and it is only rolled back on a `409 Conflict`. Any other `DecreaseStock` failure leaves an order with no stock reserved.
+- [ ] Send the ordered quantity to `DecreaseStock` (it currently decreases a fixed amount).
+- [ ] Replace the check-then-act stock validation with an atomic, idempotent reservation keyed by order ID.
+- [ ] Implement the order flow as a saga (reserve stock → confirm order → compensate on failure), with a transactional outbox so events are not lost when a service restarts.
+
+### Resilience
+- [ ] Propagate the incoming request context and set deadlines on every gRPC call instead of `context.Background()`.
+- [ ] Add retries with exponential backoff for idempotent calls only.
+- [ ] Replace the deprecated `grpc.WithInsecure()` with `grpc.WithTransportCredentials(insecure.NewCredentials())`.
+- [ ] Add gRPC health checks and use them in `docker-compose.yml`.
+- [ ] Handle database errors that are ignored today (for example, the result of `DB.Create`).
+
+### Observability
+- [ ] Distributed tracing with OpenTelemetry across the gateway and the services, viewable in Jaeger.
+- [ ] Structured logs with a request ID that follows the call chain.
+- [ ] Prometheus metrics for request rate, errors and latency.
+
+### Testing and docs
+- [ ] Integration tests for the order flow with Testcontainers (Postgres), covering failure and compensation paths.
+- [ ] A "Design decisions" section and ADRs in `docs/adr/` explaining the saga, outbox and idempotency choices, and what was left out on purpose.
