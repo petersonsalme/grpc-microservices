@@ -73,8 +73,8 @@ This started as a study project. The items below turn it into a study of consist
 
 ### Consistency
 - [ ] Fix the order flow: today the order is saved before the stock is decreased, and it is only rolled back on a `409 Conflict`. Any other `DecreaseStock` failure leaves an order with no stock reserved.
-- [ ] Send the ordered quantity to `DecreaseStock` (it currently decreases a fixed amount).
-- [ ] Replace the check-then-act stock validation with an atomic, idempotent reservation keyed by order ID.
+- [ ] Send the ordered quantity to `DecreaseStock` (it currently always decreases the stock by 1).
+- [ ] Make the stock decrease atomic: it reads the stock and writes it back without a transaction or lock, so concurrent orders can oversell. It is already idempotent per order ID through `StockDecreaseLog`.
 - [ ] Implement the order flow as a saga (reserve stock → confirm order → compensate on failure), with a transactional outbox so events are not lost when a service restarts.
 
 ### Resilience
