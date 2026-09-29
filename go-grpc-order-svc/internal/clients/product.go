@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/pkg/pb"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/pkg/pb"
 	"google.golang.org/grpc"
 )
 

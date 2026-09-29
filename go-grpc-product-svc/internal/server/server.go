@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/pkg/pb"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-product-svc/internal/db"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-product-svc/internal/models"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/pkg/pb"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-product-svc/internal/db"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-product-svc/internal/models"
 )
 
 type Server struct {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/pkg/pb"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-order-svc/internal/clients"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-order-svc/internal/db"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-order-svc/internal/models"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/pkg/pb"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-order-svc/internal/clients"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-order-svc/internal/db"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-order-svc/internal/models"
 )
 
 type Server struct {

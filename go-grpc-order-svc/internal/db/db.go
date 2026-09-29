@@ -3,7 +3,7 @@ package db
 import (
 	"log"
 
-	"github.com/petersonsalme/go-grpc-project/go-grpc-order-svc/internal/models"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-order-svc/internal/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

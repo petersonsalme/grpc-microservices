@@ -1,5 +1,7 @@
 # Go gRPC Microservices
 
+[![CI](https://github.com/petersonsalme/grpc-microservices/actions/workflows/grpc-ci.yml/badge.svg)](https://github.com/petersonsalme/grpc-microservices/actions/workflows/grpc-ci.yml)
+
 This repository contains a set of microservices built with Go and gRPC, working together to handle authentication, product management, and order processing, fronted by an API Gateway.
 
 ## Architecture

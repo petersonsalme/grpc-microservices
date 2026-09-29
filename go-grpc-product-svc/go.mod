@@ -1,9 +1,9 @@
-module github.com/petersonsalme/go-grpc-project/go-grpc-product-svc
+module github.com/petersonsalme/grpc-microservices/go-grpc-product-svc
 
 go 1.24.0
 
 require (
-	github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway v0.0.0-20220815224409-6b2326f1eb53
+	github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway v0.0.0
 	github.com/spf13/viper v1.12.0
 	google.golang.org/grpc v1.79.3
 	gorm.io/driver/postgres v1.5.9
@@ -40,3 +40,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway => ../go-grpc-api-gateway

@@ -5,10 +5,10 @@ import (
 	"log"
 	"net"
 
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/pkg/pb"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-product-svc/internal/config"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-product-svc/internal/db"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-product-svc/internal/server"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/pkg/pb"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-product-svc/internal/config"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-product-svc/internal/db"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-product-svc/internal/server"
 	"google.golang.org/grpc"
 )
 

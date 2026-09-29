@@ -1,10 +1,10 @@
-module github.com/petersonsalme/go-grpc-project/go-grpc-auth-svc
+module github.com/petersonsalme/grpc-microservices/go-grpc-auth-svc
 
 go 1.24.0
 
 require (
 	github.com/golang-jwt/jwt/v5 v5.2.2
-	github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway v0.0.0-20220815175405-d9b9c3be6f97
+	github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway v0.0.0
 	github.com/spf13/viper v1.12.0
 	golang.org/x/crypto v0.46.0
 	google.golang.org/grpc v1.79.3
@@ -41,3 +41,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway => ../go-grpc-api-gateway

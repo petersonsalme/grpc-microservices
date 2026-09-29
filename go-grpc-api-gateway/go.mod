@@ -1,4 +1,4 @@
-module github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway
+module github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway
 
 go 1.24.0
 

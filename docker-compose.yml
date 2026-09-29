@@ -18,8 +18,8 @@ services:
 
   auth-svc:
     build:
-      context: ./go-grpc-auth-svc
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: go-grpc-auth-svc/Dockerfile
     environment:
       - PORT=:50051
       - DB_URL=postgres://root:pass@db:5432/auth_svc
@@ -32,8 +32,8 @@ services:
 
   product-svc:
     build:
-      context: ./go-grpc-product-svc
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: go-grpc-product-svc/Dockerfile
     environment:
       - PORT=:50052
       - DB_URL=postgres://root:pass@db:5432/product_svc
@@ -45,8 +45,8 @@ services:
 
   order-svc:
     build:
-      context: ./go-grpc-order-svc
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: go-grpc-order-svc/Dockerfile
     environment:
       - PORT=:50053
       - DB_URL=postgres://root:pass@db:5432/order_svc

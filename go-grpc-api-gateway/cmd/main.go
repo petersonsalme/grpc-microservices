@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"github.com/gin-gonic/gin"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/internal/config"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/internal/routes"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/internal/config"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/internal/routes"
 )
 
 func main() {

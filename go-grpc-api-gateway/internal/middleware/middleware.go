@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/internal/clients"
-	"github.com/petersonsalme/go-grpc-project/go-grpc-api-gateway/pkg/pb"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/internal/clients"
+	"github.com/petersonsalme/grpc-microservices/go-grpc-api-gateway/pkg/pb"
 )
 
 type AuthMiddlewareConfig struct {
