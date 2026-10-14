@@ -23,8 +23,6 @@ grpc-microservices/
 
 ## Regras e Comandos
 
-- Prefix shell commands with `rtk` (see `.agents/rules/rtk.md`).
-
 1. **Estrutura por Serviço:**
    - Cada serviço possui seu próprio `go.mod`, `Dockerfile` e `Makefile` em seu respectivo diretório.
    - Ao executar comandos Go, navegue até a pasta do serviço específico (ex.: `cd go-grpc-api-gateway && go test ./...`).
@@ -36,5 +34,3 @@ grpc-microservices/
 4. **Padrões de Desenvolvimento:**
    - Conventional Commits (`feat:`, `fix:`, `refactor:`, `test:`).
    - Respostas ao usuário em Português do Brasil; código e documentação técnica em Inglês.
-
-@.agents/rules/rtk.md
